@@ -19,7 +19,7 @@ export default function SignUpPage() {
         <div className="relative right-[-5%]">
             <a href="/">
                 <img
-                src="/logo.png"
+                src="/logoonly.png"
                 alt="VoxelTalk Logo"
                 className="h-12"
                 />

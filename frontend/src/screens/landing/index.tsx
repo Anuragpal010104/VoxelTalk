@@ -7,8 +7,6 @@ import StyledExample from "@/components/ui/DemoCarousel";
 import Footer from "@/components/ui/Footer";
 import { TextHoverEffect } from "@/components/ui/Text-Hover";
 import { Bento } from "@/components/ui/BentoGrid";
-import Pricing from "@/components/ui/Pricing";
-import Testimonial from "@/components/ui/Testimonial";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
 
@@ -68,8 +66,6 @@ export default function Landing() {
 
       <StyledExample />
       <Bento />
-      <Testimonial />
-      <Pricing />
       
 
     </div>

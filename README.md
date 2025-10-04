@@ -1,8 +1,95 @@
-# ✏️ VoxelTalk — DrawImagine sketching a problem and having a friendly AI math tutor **read your drawing**, figure out what you mean, and return an answer before you can blink. That's VoxelTalk — math & physics solved as if by magic. Solve. Explore. ✨
+# ✨ VoxelTalk
 
-**VoxelTalk** is your personal math & physics wizard — draw a problem, click a button, and watch it solve the toughest equations like magic! 🧙‍♂️ Whether it's algebra, calculus, or even a tricky physics diagram, VoxelTalk understands your scribbles and instantly returns clear, beautiful solutions rendered in LaTeX.️ Inquate — Draw. Solve. Explore. ✨
+**Draw. Solve. Explore.**
 
-**Inquate** is your personal math & physics wizard — draw a problem, click a button, and watch it solve the toughest equations like magic! 🧙‍♂️ Whether it’s algebra, calculus, or even a tricky physics diagram, Inquate understands your scribbles and instantly returns clear, beautiful solutions rendered in LaTeX.
+# ✨ VoxelTalk
+
+**Draw. Solve. Explore.**
+
+Your personal AI-powered math and physics assistant. Sketch any equation or diagram, click solve, and get instant, accurate solutions rendered in beautiful LaTeX.
+
+## 🚀 Features
+
+- **✏️ Draw Anything** — Equations, shapes, graphs, vectors — just sketch it
+- **🔮 AI-Powered Solving** — One click for instant solutions to math and physics problems
+- **📐 LaTeX Rendering** — Professional, crisp math output with MathJax
+- **🎨 Interactive Canvas** — Edit, resize, and reposition shapes with ease
+- **🔐 Secure Authentication** — Sign in seamlessly with Clerk
+
+## 🔧 Tech Stack
+
+**Frontend:** React, Vite, TypeScript, Tailwind CSS, Clerk, MathJax  
+**Backend:** FastAPI, Python, Google Generative AI, Pillow  
+**Deployment:** Vercel (Frontend) + Railway (Backend)
+
+## 🎯 Quick Start
+
+### Prerequisites
+- Python 3.8+
+- Node.js 16+
+- Gemini API Key
+- Clerk Account
+
+### Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Create `.env` file:
+```env
+GEMINI_API_KEY=your-google-gemini-api-key
+```
+
+Run the server:
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8900
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+```
+
+Create `.env.local` file:
+```env
+VITE_API_URL=http://localhost:8900
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+VITE_CLERK_SIGN_IN_URL=/sign-in
+VITE_CLERK_SIGN_UP_URL=/sign-up
+VITE_CLERK_AFTER_SIGN_IN_URL=/canvas
+VITE_CLERK_AFTER_SIGN_UP_URL=/canvas
+VITE_CLERK_AFTER_SIGN_OUT_URL=/
+```
+
+Run the dev server:
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` to see VoxelTalk in action! 🎉
+
+## 🌐 Deployment
+
+**Backend (Railway):**
+- Set root directory to `backend`
+- Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+- Add environment variables from `.env`
+
+**Frontend (Vercel):**
+- Set root directory to `frontend`
+- Build command: `npm run build`
+- Add environment variables from `.env.local`
+- Update `VITE_API_URL` to your Railway backend URL
+
+**VoxelTalk** is your personal math & physics wizard — draw a problem, click a button, and watch it solve the toughest equations like magic! 🧙‍♂️ Whether it's algebra, calculus, or even a tricky physics diagram, VoxelTalk understands your scribbles and instantly returns clear, beautiful solutions rendered in LaTeX.️ VoxelTalk — Draw. Solve. Explore. ✨
+
+**VoxelTalk** is your personal math & physics wizard — draw a problem, click a button, and watch it solve the toughest equations like magic! 🧙‍♂️ Whether it’s algebra, calculus, or even a tricky physics diagram, VoxelTalk understands your scribbles and instantly returns clear, beautiful solutions rendered in LaTeX.
 
 
 
@@ -19,7 +106,7 @@
 
 
 ## 🧠 How It Feels
-Imagine sketching a problem and having a friendly AI math tutor **read your drawing**, figure out what you mean, and return an answer before you can blink. That’s Inquate — math & physics solved as if by magic.
+Imagine sketching a problem and having a friendly AI math tutor **read your drawing**, figure out what you mean, and return an answer before you can blink. That’s VoxelTalk — math & physics solved as if by magic.
 
 ## 📂 Project Structure
 ```
@@ -157,10 +244,30 @@ Deploy both backend and frontend as separate services:
 5. Each service will get its own Railway URL.
 6. (Optional) Add a custom domain in Railway dashboard.
 
-## 📜 License
-MIT License.
-See LICENSE for details.
+## � Project Structure
+
+```
+voxeltalk/
+├── backend/          # FastAPI backend
+│   ├── main.py
+│   ├── constants.py
+│   ├── schema.py
+│   └── apps/
+│       └── calculator/
+└── frontend/         # React + Vite frontend
+    ├── src/
+    │   ├── components/
+    │   ├── screens/
+    │   └── ...
+    └── public/
+```
+
+## �📜 License
+
+MIT License — See [LICENSE](LICENSE) for details.
 
 ---
-Happy hacking! 🎉
-For questions or contributions, open an issue or PR.
+
+**Made with ✨ by the VoxelTalk Team**
+
+Questions or contributions? Open an issue or PR!
