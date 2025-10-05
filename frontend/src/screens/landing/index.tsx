@@ -19,10 +19,16 @@ export default function Landing() {
       {/* Full-page background grid */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Show on sm and up: Elliptical Gradient */}
-        <div className="hidden xs:block w-full h-full animate-pulseGradient bg-[radial-gradient(ellipse_at_center,_#000_10%,_#005fff_55%,_#ff73a1_80%,_#ff9900_90%)]"></div>
+  {/* <div className="hidden xs:block w-full h-full animate-pulseGradient bg-[radial-gradient(ellipse_at_center,_#000_10%,_#003bb5_55%,_#e0528b_80%,_#cc7a00_90%)]"></div> */}
 
         {/* Show only on small screens: Circular Gradient */}
-        <div className="block xs:hidden w-full h-full animate-pulseGradient bg-[radial-gradient(circle_at_center,_#000_10%,_#005fff_55%,_#ff73a1_80%,_#ff9900_90%)]"></div>
+  {/* <div className="block xs:hidden w-full h-full animate-pulseGradient bg-[radial-gradient(circle_at_center,_#000_10%,_#003bb5_55%,_#e0528b_80%,_#cc7a00_90%)]"></div> */}
+  {/* Show on larger screens */}
+<div className="hidden xs:block w-full h-full animate-pulseGradient bg-[radial-gradient(ellipse_at_center,_#050517_0%,_#0c1b4d_40%,_#182b8a_60%,_#ff4fa3_100%)]"></div>
+
+{/* Show only on small screens */}
+<div className="block xs:hidden w-full h-full animate-pulseGradient bg-[radial-gradient(circle_at_center,_#050517_0%,_#0c1b4d_40%,_#182b8a_60%,_#ff4fa3_100%)]"></div>
+
       </div>
 
       <InteractiveGridPattern

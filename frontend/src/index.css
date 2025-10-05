@@ -122,7 +122,7 @@ code {
     content: '';
     position: absolute;
     inset: -2px; /* Adjust this value to control border thickness */
-    background: linear-gradient(90deg, #EC4899, #3B82F6, #A855F7); /* Pink-500, Blue-500, Purple-500 */
+  background: linear-gradient(90deg, #BE185D, #1D4ED8, #7C3AED); /* darker Pink-700, Blue-700, Purple-700 */
     background-size: 400% 100%; /* Make background larger for animation */
     z-index: -1; /* Place it behind the button content */
     border-radius: inherit; /* Inherit the 'rounded-full' from the button */
